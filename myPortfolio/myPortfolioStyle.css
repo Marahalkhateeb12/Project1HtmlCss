@@ -1,230 +1,315 @@
+*{
+    font-family: century;
+    color: rgb(116, 61, 79);
+    box-sizing: border-box;
+}
 body{
-    background-image: url('images/R\ \(2\).jpg');
-    background-size: cover;
+background-image: url(images/R\ \(2\).jpg);
+background-size: cover;
+}   
+#Home{
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 280px;
+    padding-left: 500px;
+    height: 750px;
+    background-image: url(images/mep-removebg-preview.png);
     
 }
-nav{
-    position: sticky;
-    top: 0px;
+.perInfo{
+    font-weight: bolder;
 }
-
 .center{
-    width: 60px;
     height: 40px;
+    width: 60px;
     position: relative;
     top: 4px;
 }
-
-.AboutMe{
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-rows: 500px ;
-    grid-template-columns: 50% 50%;
-
+#aboutMe{
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(212, 167, 167);
+    margin: 90px;
 }
-
-.myPic{
-    height: 500px;
-    width: 100%;
-}
-.perInfo{
-    padding-top: 150px;
-    padding-left: 30px;
-    font-weight: bolder;
+.abouttxt{
+    padding-top: 200px;
     
-    color: rgb(116, 61, 79);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Qual{
    
-}
-.perInfo h4{
-    padding-left: 35px;
-    font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.perInfo h3{
-    padding-left: 35px;
-    font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.Qual{
-    width: 50%;
-    color: rgb(116, 61, 79);
-    font-weight: bolder;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    float: left;
-    
-    margin: 0px;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: 300px 300px;
+        gap: 20px;
+        background-color: rgb(212, 167, 167);
+    margin: 90px;
+        height: 750px;
     }
-    .Qual h4{
-        font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    .qImg{
+            grid-area: 1 / 1 / span 2 / span 1;
+            position: relative;
+            top: 90px;
     }
-    .techSkill{
-        height: 200px;
+    #Coding{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: 300px 300px;
+        gap: 20px;
+        height: 750px;
+        background-color: rgb(212, 167, 167);
+    margin: 90px;
+    }
+    .codeImg{
+        position: relative;
+        top: 90px;
+        grid-area: 1 / 1 / span 2 / span 1;
+      
+    }
+    #Ref{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: 200px 200px;
+        gap: 20px;
+        height: 600px;
+        padding-top: 100px;
+        background-color: rgb(212, 167, 167);
+    margin: 90px;
+       }
+       .refImg{
+          
+           position: relative;
+           top: 20px;
+           grid-area: 1 / 1 / span 2 / span 1;
+           
+       }
+       #Skills{
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: 200px 200px 200px;
+        gap: 20px;
+        height: 750px;
+        background-color: rgb(212, 167, 167);
+    margin: 90px;
+    }
+    .img{
+        position: relative;
+        top: 120px;
+        grid-area: 1 / 1 / span 3 / span 1;
+       
+    }
+    .tech{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        color: rgb(116, 61, 79);
-        font-weight: normal;
-        font-family:Georgia, 'Times New Roman', Times, serif;
     }
-   
+    .soft{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .lang{
-        height: 100px;
-        font-weight: normal;
-        color: rgb(116, 61, 79);
-        font-family:Georgia, 'Times New Roman', Times, serif;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .softSkill{
-        height: 200px;
+    .checked {
+        color: orange;
+      }
+      #footer{
         display: flex;
-        color: rgb(116, 61, 79);
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-weight: normal;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    .h2{
-        color: rgb(116, 61, 79);
-    font-weight: bolder;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .Exp{
-        width: 50%;
-        color: rgb(116, 61, 79);
-        font-weight: bolder;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        float: left;
-        height: 400px;  
-    }
-    .Exp h4,i{
-        font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    .cod{
-        width: 60%;
-        color: rgb(116, 61, 79);
-        font-weight: bolder;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        float: left;
-    }
-    .cod h4{
-        font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    .cod h5{
-        font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    .ref{
-        width: 50%;
-        color: rgb(116, 61, 79);
-        font-weight: bolder;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        float: left;
-    }
-    
-    .ref h4{
-        font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    h2{
-        color: rgb(116, 61, 79);
-        font-weight: bolder;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .ref h5{
-        color: rgb(116, 61, 79);
-        font-weight: normal;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-
-.checked {
-    color: orange;
-  }
-  .footer{
-   display: flex;
-   flex-direction: row-reverse;
-   justify-content: center;
-   padding-top: 10px;
-    width: 100%;
-background-color:  rgb(116, 61, 79);
-color: antiquewhite;
-font-weight: normal;
-font-family:Georgia, 'Times New Roman', Times, serif;
-height: 40px;
-
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+        width: 100%;
+        background-color:  rgb(116, 61, 79);
+        color: antiquewhite;
+        height: 40px;
+      }
+      @media screen and (max-width: 479px){
+#Home{
+    width: 700px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
 }
-
-
-
-
-@media screen and (min-width: 480px) and (max-width: 768px)
-{ 
-    .AboutMe{
-        margin-top: 10px;
-    }
-   .myPic{
-       width: 100%;
-   }
-   .perInfo{
-    width: 100%;
-   }
-   .Qual{
-    width: 100%;
-   }
-   .techSkill{
-       width: 100%;
-   }
-   .softSkill{
-    width: 100%;
-   }
-   .lang{
-    width: 100%;
-   }
-   .ref{
-    width: 100%;
-   }
-   .Exp{
-    width: 100%;
-   }
-   .cod{
-    width: 100%;
-   }
-
+.myImg{
+    background-image: url(images/mep-removebg-preview.png);
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 500px;
 }
-@media screen and (max-width: 479px){
-    
-   .myPic{
-    width: 100%;
+#aboutMe{
+    width: 700px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1000px;
+    margin: 20px;
 }
-.perInfo{
- width: 100%;
+.aboutImg{
+    width: 350px;
+    height: 300px;
 }
-.Qual{
- width: 100%;
+#Qual{
+    margin: 20px;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.techSkill{
-    width: 100%;
-}
-.softSkill{
- width: 100%;
-}
-.lang{
- width: 100%;
-}
-.ref{
- width: 100%;
+.qImg{
+    position: relative;
+    top: 0px;
+    width: 400px;
+    height: 300px;  
 }
 .Exp{
- width: 100%;
+    width: 400px;
+    margin-top: 30px;
 }
-.cod{
- width: 100%;
+#Coding{
+    margin: 20px;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
+.codeImg{
+    position: relative;
+    top: 0px;
+    width: 400px;
+    height: 300px;  
+}
+#Ref{
+    margin: 20px;
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.refImg{
+    position: relative;
+    top: 0px;
+    width: 400px;
+    height: 300px;  
+}
+.cHala{
+    margin-top: 80px;
+}
+#Skills{
+    margin: 20px;
+    width: 700px;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.tech{
+    margin-top: 80px;
+}
+#footer{
+    width: 700px;
+}
+}
+      
+      @media screen and (min-width: 480px) and (max-width: 768px)
+{ 
+    #Home{
+        width: 1500px;
+        height: 700px;
+        background-image: none;
+        display: flex;
+        padding: 0px;
+    }
+    .myImg{
+        background-image: url(images/mep-removebg-preview.png);
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 500px;
+    }
+    .perInfo{
+        padding-top: 200px;
+    }
+    #aboutMe{
+        width: 900px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 800px;
+        margin: 20px;
+    }
+    .aboutImg{
+        width: 350px;
+        height: 300px;
+    }
+    #Qual{
+        margin: 20px;
+        width: 900px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .qImg{
+        position: relative;
+        top: 0px;
+        width: 400px;
+        height: 300px;  
+    }
+    .Exp{
+      
+        margin-top: 30px;
+    }
+    #Coding{
+        margin: 20px;
+        width: 900px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .codingImg{
+        position: relative;
+        top: 0px;
+        width: 400px;
+        height: 300px;  
+    }
+    #Ref{
+        margin: 20px;
+        width: 900px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .refImg{
+        position: relative;
+        top: 0px;
+        width: 400px;
+        height: 300px;  
+    }
+    .cHala{
+        padding-top: 80px;
+    }
+    #Skills{
+        margin: 20px;
+        width: 900px;
+        height: 1400px;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tech{
+        margin-top: 80px;
+    }
+    #footer{
+        width: 900px;
+    }
 }
